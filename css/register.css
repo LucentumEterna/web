@@ -1,0 +1,42 @@
+.registerLoginOculto {
+    display: none;
+}
+
+.registerDesplegado {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: gray;
+}
+
+.btnRegister {
+    padding: 5px;
+}
+
+.btnLogin {
+    padding: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    .contenedorLogin {
+        align-self: center;
+        margin: 16px 0 16px 0;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contenedorLogin {
+        align-self: center;
+        margin: 16px 32px 16px 0;
+    }
+}
+
+.loginButtonsOculto {
+    display: none;
+}
+
+#logged-user {
+    color: #04AA6D;
+    font-weight: bold;
+    margin: 16px 0px 16px 0px;
+}
