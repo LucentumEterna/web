@@ -218,81 +218,6 @@ article a {
     color: whitesmoke;
 }
 
-.tabla-contacto {
-    border-spacing: 5px;
-    border-collapse: separate;
-}
-
-textarea {
-	border-radius: 5px;
-	border-color: #850929;
-	outline: none;
-}
-
-input[type=file] {
-    color: transparent;
-}
-
-input[type=file]::-webkit-file-upload-button {
-    color:black;
-    outline: none;
-    border: solid 0.5px #850929;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,0.8);
-    transition: all 0.3s ease-in-out;
-    padding: 10px 10px 10px 10px;
-}
-
-input[type=file]::-webkit-file-upload-button:hover {
-    color: white;
-    background-color: #850929;
-}
-
-.select-pais {
-    outline: none;
-    border-color: #850929;
-    border-radius: 32px;
-    padding-left: 10px;
-}
-
-.texto form fieldset {
-    border: solid 0.5px #850929;
-    border-radius: 32px;
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 40px;
-}
-
-td input[type=text], td input[type=email] {
-    outline: none;
-    border: solid 0.5px #850929;
-    border-radius: 32px;
-    padding-left: 10px;
-}
-
-td input[type=reset], td button[type=submit] {
-	background-color: whitesmoke;
-	border: none;
-	color: #850929;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	cursor: pointer;
-    border: 1px solid #850929;
-	border-radius: 5px;
-	outline: none;
-	transition: all 0.3s linear;
-}
-
-td input[type=reset]:hover, td button[type=submit]:hover {
-	color: whitesmoke;
-	background-color: #850929;
-}
-
-td input[type=reset]:focus, td button[type=submit]:focus {
-	outline: none;
-}
-
 .articulo {
     padding-left: 20px;
     padding-right: 20px;
@@ -319,4 +244,36 @@ td input[type=reset]:focus, td button[type=submit]:focus {
 
 .articulo div button i {
   font-size: 16px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto input, .form-contacto textarea {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px #850929 solid;
+}
+
+.form-contacto input {
+    padding: 5px;
+}
+
+.form-contacto label {
+    margin-bottom: 5px;
+}
+
+.social-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-contact a img {
+    max-width: 100px;
+    max-height: 100px;
 }

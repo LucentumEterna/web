@@ -4,119 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elche | La mejor ciudad</title>
-    <link rel="stylesheet" href="../css/styles.css" media="(min-width: 1080px)" type="text/css"/>
-    <link rel="stylesheet" href="../css/small-styles.css" media="(max-width: 1080px)" type="text/css"/>
-    <link rel="stylesheet" href="../css/register.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/articles.css" type="text/css"/>
-    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
-    <script src="../js/database.js"></script>
+    <title>Lucentum Eterna</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="css/styles.css" media="(min-width: 1080px)" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="css/small-styles.css" media="(max-width: 1080px)" type="text/css"/>-->
+    <link rel="icon" type="image/x-icon" href="../imgs/logo.ico">
 </head>
 <body>
-    <div class="header-fijo">
-        <header>
-            <div>
-                <img src="../imgs/logo.svg" width="75" height="50" alt="logo" class="logo">
-            </div>
-            <div><p class="titulo">Elche</p></div>
-            <div>
-                <div class="contenedorLogin">
-                    <div id="loginButtons" class="loginButtonsDesplegados">
-                        <button onclick="showRegister()" class="btnRegister">Registro</button>
-                        <button onclick="showLogin()" class="btnLogin">Login</button>
-                    </div>
-
-                    <div id="registerDiv" class="registerLoginOculto">
-                        <br>
-                        <div>
-                            <label for="inputUsuarioReg">Usuario:</label>
-                        </div>
-                        <div>
-                            <input type="text" id="inputUsuarioReg" name="inputUsuarioReg" />
-                        </div>
-                        <br>
-                        <div>
-                            <label for="inputPasswdReg">Contraseña:</label>
-                        </div>
-                        <div>
-                            <input type="password" id="inputPasswdReg" />
-                        </div>
-                        <br>
-                        <div>
-                            <label for="inputPasswdRepeatReg">Repetir Contraseña:</label>
-                        </div>
-                        <div>
-                            <input type="password" id="inputPasswdRepeatReg" />
-                        </div>
-                        <br>
-                        <div>
-                            <button onclick="enviar('reg')">Enviar</button>
-                        </div>
-                    </div>
-
-                    <div id="loginDiv" class="registerLoginOculto">
-                        <br>
-                        <div>
-                            <label for="inputUsuarioLog">Usuario:</label>
-                        </div>
-                        <div>
-                            <input type="text" id="inputUsuarioLog" />
-                        </div>
-                        <br>
-                        <div>
-                            <label for="inputPasswdLog">Contraseña:</label>
-                        </div>
-                        <div>
-                            <input type="password" id="inputPasswdLog" />
-                        </div>
-                        <br>
-                        <div>
-                            <button onclick="enviar('log')">Enviar</button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <span id="login-span"></span>
-                    </div>
-
-                    <div>
-                        <span id="logged-user" hidden>Usuario: </span>
-                    </div>
+    <div class="content-wrapper">
+        <div class="header-fijo">
+            <header>
+                <div class="titLogo">
+                    <img src="../imgs/logo.png" width="50" height="50" alt="logo" class="logo">
+                    <span class="titulo">Lucentum Eterna</span>
                 </div>
+
+                <div class="navbar">
+                    <a href="../index.html" title="Inicio">Inicio</a>
+                    <a href="contacto.html" title="Contacto">Contacto</a>
+                    <a href="#" id="inicio" title="Sobre Nosotros">Sobre Nosotros</a>
+                </div>
+
+                <div class="nav-social">
+                    <a href="https://www.instagram.com/lucentumeterna/" id="instagram" title="Instagram">
+                        <img src="../imgs/instagram.png" alt="instagram logo" />
+                    </a>
+                    <a href="mailto:lucentumeterna@gmail.com" id="correo" title="Email">
+                        <img src="../imgs/email.png" alt="mail logo" />
+                    </a>
+                    <a href="https://wa.me/34657359454" id="whatsapp" title="whatsapp">
+                        <img src="../imgs/whatsapp.png" alt="whatsapp logo" />
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <div class="articulo">
+            <img alt="logo" src="../imgs/logo.png">
+            <div style="margin-right: 30px;">
+                <h2 style="font-weight: bold; margin-bottom: 20px;">Lucentum Eterna</h2>
+                <p>Lucentum Eterna nace con un propósito claro: acercar la historia de la provincia de Alicante a través de visitas guiadas que conectan al visitante con el pasado que aún vive en nuestras calles. Nuestro objetivo es difundir el patrimonio cultural de municipios como Villajoyosa, Alcoy o Guadalest, haciendo que cada persona que nos acompaña no solo descubra monumentos, sino también las historias que los rodean.</p>
+                <p>Somos una empresa joven, comprometida con la divulgación histórica y la sostenibilidad turística, que apuesta por experiencias auténticas, con rigor histórico y adaptadas a todo tipo de público. Creemos en un turismo que emociona, que enseña y que deja huella.</p>
             </div>
-        </header>
-        <nav>
-            <button onclick="desplegarNav()" id="boton-desplegar" class="boton-lista"></button>
-            <ul id="navBar" class="oculto">
-                <li><a href="../index.html" title="Inicio">Inicio</a></li>
-                <li><a href="contacto.html" title="Contacto">Contacto</a></li>
-                <li><a href="#" id="inicio" title="Sobre Nosotros">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
+        </div>
     </div>
 
-    <main>
-        <div>
-            <img src="../imgs/articles/ajunt.jpg" alt="Ajuntamiento">
-        </div>
-        <div class="info">
-            <P>
-                L'Ajuntament d'Elx és la seu del consell municipal de la ciutat d'Elx. Junt amb la Llotja, 
-                domina la plaça de Baix, situada en ple centre de la ciutat vella.
-                El nucli original de l'edifici és la Torre del Consell, que es construí entre 1441 i 1444, dirigit pel mestre Beiam. 
-                Antany, la torre era integrada en la muralla de la vila, i el seu portal servia de lloc de pas entre la plaça de Baix i el Mercat.
-                 El 1548 Sebastià Alcaràs convertí tant la Torre com la Llotja adjunta en un sol palau d'estil renaixentista, 
-                 amb una sala de consells oberta a l'exterior per dos buits arestats i coronats per una llinda amb decoració escultòrica 
-                 (una composició semblant a les finestres del Col·legi de Sant Doménec d'Oriola). En aquesta reforma d'Alcaràs també 
-                 es realitzaren la llotja superior d'arquets de mig punt sobre pilars, a la manera com en aquells moments 
-                 s'estava fent en altres edificis públics valencians, com la Casa Consistorial d'Alzira o l'Hospital de Xàtiva, 
-                 i l'escala de caragol a l'interior. L'últim canvi fet fou en 1645 quan es construí l'ala de llevant, així deixant la Torre al centre de l'edifici.
-            </P>
-        </div>
-    </main>
-
     <footer>
-        <p>Copyright &#169; 2022 - Elche la mejor ciudad</p>
+        <span>Copyright &#169; 2025 - Lucentum Eterna</span>
     </footer>
 </body>
 </html>
