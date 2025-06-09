@@ -142,7 +142,7 @@ article:hover .diva .tit-alterno {
 }
 
 article:hover .diva {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.3fr;
 }
 
 .header-fijo {
@@ -194,7 +194,7 @@ section {
 
 article {
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.1);
